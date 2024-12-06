@@ -1,0 +1,10 @@
+com.tencent.yolov8ncnn.app-pngs-0 C:\Users\Admin\Desktop\cobj-project\app\build\generated\res\pngs\debug
+com.tencent.yolov8ncnn.app-resValues-1 C:\Users\Admin\Desktop\cobj-project\app\build\generated\res\resValues\debug
+com.tencent.yolov8ncnn.app-packageDebugResources-2 C:\Users\Admin\Desktop\cobj-project\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.tencent.yolov8ncnn.app-packageDebugResources-3 C:\Users\Admin\Desktop\cobj-project\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.tencent.yolov8ncnn.app-merged_res-4 C:\Users\Admin\Desktop\cobj-project\app\build\intermediates\merged_res\debug
+com.tencent.yolov8ncnn.app-debug-5 C:\Users\Admin\Desktop\cobj-project\app\src\debug\res
+com.tencent.yolov8ncnn.app-main-6 C:\Users\Admin\Desktop\cobj-project\app\src\main\res
+com.tencent.yolov8ncnn.app-support-compat-28.0.0-7 D:\freelance\count-obj-project\caches\transforms-3\0b2e52951c499520cc704bc6e41bcdd6\transformed\support-compat-28.0.0\res
+com.tencent.yolov8ncnn.app-support-media-compat-28.0.0-8 D:\freelance\count-obj-project\caches\transforms-3\9da3559f641929cb80251dfe43a3ec1c\transformed\support-media-compat-28.0.0\res
+com.tencent.yolov8ncnn.app-coordinatorlayout-28.0.0-9 D:\freelance\count-obj-project\caches\transforms-3\ef937c49016392955eeffbbae4e87e30\transformed\coordinatorlayout-28.0.0\res

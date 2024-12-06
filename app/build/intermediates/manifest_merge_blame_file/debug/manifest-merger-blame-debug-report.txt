@@ -1,0 +1,63 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.yolov8ncnn"
+4    android:versionCode="1"
+5    android:versionName="1.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:6:5-65
+11-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:6:22-62
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:7:5-81
+12-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:8:5-80
+13-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:8:22-77
+14
+15    <uses-feature android:name="android.hardware.camera2.full" />
+15-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:9:5-66
+15-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:9:19-63
+16
+17    <application
+17-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:11:5-25:19
+18        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+18-->[com.android.support:support-compat:28.0.0] D:\freelance\count-obj-project\caches\transforms-3\0b2e52951c499520cc704bc6e41bcdd6\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:13:9-43
+22        android:label="@string/app_name"
+22-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:12:9-41
+23        android:requestLegacyExternalStorage="true"
+23-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:15:9-52
+24        android:roundIcon="@mipmap/ic_launcher"
+24-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:14:9-48
+25        android:testOnly="true" >
+26        <activity
+26-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:17:9-24:20
+27            android:name="com.tencent.yolov8ncnn.MainActivity"
+27-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:17:19-46
+28            android:label="@string/app_name"
+28-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:18:13-45
+29            android:screenOrientation="portrait" >
+29-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:19:13-49
+30            <intent-filter>
+30-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:20:13-23:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:21:17-69
+31-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:21:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:22:17-77
+33-->C:\Users\Admin\Desktop\cobj-project\app\src\main\AndroidManifest.xml:22:27-74
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

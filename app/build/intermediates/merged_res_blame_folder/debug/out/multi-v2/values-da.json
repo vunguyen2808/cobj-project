@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.tencent.yolov8ncnn.app-mergeDebugResources-2:/values-da/values-da.xml",
+            "map": [
+                {
+                    "source": "D:\\freelance\\count-obj-project\\caches\\transforms-3\\0b2e52951c499520cc704bc6e41bcdd6\\transformed\\support-compat-28.0.0\\res\\values-da\\values-da.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

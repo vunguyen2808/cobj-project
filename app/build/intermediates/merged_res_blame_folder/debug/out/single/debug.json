@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/drawable_ic_launcher.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/drawable/ic_launcher.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/layout_main.xml.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/layout/main.xml"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-hdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-hdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-xxxhdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-xxxhdpi/ic_launcher_adaptive_back.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-hdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-hdpi/ic_launcher_adaptive_back.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-mdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-mdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/xml_provider_paths.xml.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-xxhdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-xxhdpi/ic_launcher_adaptive_back.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-xxhdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-xxhdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-xhdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-xhdpi/ic_launcher_adaptive_back.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/drawable_ic_camera.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/drawable/ic_camera.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-xhdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-xhdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "com.tencent.yolov8ncnn.app-merged_res-4:/mipmap-mdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.tencent.yolov8ncnn.app-main-6:/mipmap-mdpi/ic_launcher_adaptive_back.png"
+    }
+]

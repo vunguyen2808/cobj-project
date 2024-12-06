@@ -1,0 +1,19 @@
+R_DEF: Internal format may change without notice
+local
+array cpugpu_array
+array model_array
+color ic_launcher_background
+drawable ic_camera
+drawable ic_launcher
+drawable ic_launcher_background
+id buttonSwitchCamera
+id cameraview
+id layoutSpinner
+id spinnerCPUGPU
+id spinnerModel
+layout main
+mipmap ic_launcher
+mipmap ic_launcher_adaptive_back
+mipmap ic_launcher_adaptive_fore
+string app_name
+xml provider_paths

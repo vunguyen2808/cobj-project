@@ -1,0 +1,3 @@
+C:/Users/Admin/Desktop/cobj-project/app/.cxx/Debug/2d1k4s2z/arm64-v8a/CMakeFiles/yolov8ncnn.dir
+C:/Users/Admin/Desktop/cobj-project/app/.cxx/Debug/2d1k4s2z/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/cobj-project/app/.cxx/Debug/2d1k4s2z/arm64-v8a/CMakeFiles/rebuild_cache.dir
