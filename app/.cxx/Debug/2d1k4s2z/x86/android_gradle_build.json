@@ -1,34 +1,34 @@
 {
   "stringTable": {},
   "buildFiles": [
-    "C:\\Users\\Admin\\Desktop\\cobj-project\\app\\src\\main\\jni\\CMakeLists.txt"
+    "E:\\source\\freelance\\cobj-project\\app\\src\\main\\jni\\CMakeLists.txt"
   ],
   "cleanCommandsComponents": [
     [
-      "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "C:\\Users\\Vu Nguyen\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
       "-C",
-      "C:\\Users\\Admin\\Desktop\\cobj-project\\app\\.cxx\\Debug\\2d1k4s2z\\x86",
+      "E:\\source\\freelance\\cobj-project\\app\\.cxx\\Debug\\2d1k4s2z\\x86",
       "clean"
     ]
   ],
   "buildTargetsCommandComponents": [
-    "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "C:\\Users\\Vu Nguyen\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
     "-C",
-    "C:\\Users\\Admin\\Desktop\\cobj-project\\app\\.cxx\\Debug\\2d1k4s2z\\x86",
+    "E:\\source\\freelance\\cobj-project\\app\\.cxx\\Debug\\2d1k4s2z\\x86",
     "{LIST_OF_TARGETS_TO_BUILD}"
   ],
   "libraries": {
     "yolov8ncnn-Debug-x86": {
       "buildCommandComponents": [
-        "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "C:\\Users\\Vu Nguyen\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
         "-C",
-        "C:\\Users\\Admin\\Desktop\\cobj-project\\app\\.cxx\\Debug\\2d1k4s2z\\x86",
+        "E:\\source\\freelance\\cobj-project\\app\\.cxx\\Debug\\2d1k4s2z\\x86",
         "yolov8ncnn"
       ],
       "buildType": "debug",
       "abi": "x86",
       "artifactName": "yolov8ncnn",
-      "output": "C:\\Users\\Admin\\Desktop\\cobj-project\\app\\build\\intermediates\\cxx\\Debug\\2d1k4s2z\\obj\\x86\\libyolov8ncnn.so",
+      "output": "E:\\source\\freelance\\cobj-project\\app\\build\\intermediates\\cxx\\Debug\\2d1k4s2z\\obj\\x86\\libyolov8ncnn.so",
       "runtimeFiles": []
     }
   },

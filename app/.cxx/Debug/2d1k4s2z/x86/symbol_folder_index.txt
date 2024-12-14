@@ -1,1 +1,1 @@
-C:\Users\Admin\Desktop\cobj-project\app\build\intermediates\cxx\Debug\2d1k4s2z\obj\x86
+E:\source\freelance\cobj-project\app\build\intermediates\cxx\Debug\2d1k4s2z\obj\x86

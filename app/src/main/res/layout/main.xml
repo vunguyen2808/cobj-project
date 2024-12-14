@@ -14,9 +14,9 @@
         android:id="@+id/layoutSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_above="@+id/buttonSwitchCamera"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
 
         <Spinner
             android:id="@+id/spinnerModel"
@@ -25,15 +25,6 @@
             android:layout_weight="1"
             android:drawSelectorOnTop="true"
             android:entries="@array/model_array"
-            android:visibility="invisible" />
-
-        <Spinner
-            android:id="@+id/spinnerCPUGPU"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawSelectorOnTop="true"
-            android:entries="@array/cpugpu_array"
             android:visibility="invisible" />
 
     </LinearLayout>

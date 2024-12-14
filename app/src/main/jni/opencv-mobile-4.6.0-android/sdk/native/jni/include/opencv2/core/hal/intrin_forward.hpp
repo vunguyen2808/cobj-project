@@ -1,7 +1,3 @@
-// This file is part of OpenCV project.
-// It is subject to the license terms in the LICENSE file found in the top-level directory
-// of this distribution and at http://opencv.org/license.html
-
 #ifndef CV__SIMD_FORWARD
 #error "Need to pre-define forward width"
 #endif
@@ -9,13 +5,10 @@
 namespace cv
 {
 
-//! @cond IGNORED
-
 CV_CPU_OPTIMIZATION_HAL_NAMESPACE_BEGIN
 
 /** Types **/
 #if CV__SIMD_FORWARD == 1024
-// [todo] 1024
 #error "1024-long ops not implemented yet"
 #elif CV__SIMD_FORWARD == 512
 // 512
@@ -64,7 +57,6 @@ struct v_int64x4;
 struct v_float32x8;
 struct v_float64x4;
 #else
-// 128
 #define __CV_VX(fun)   v_##fun
 #define __CV_V_UINT8   v_uint8x16
 #define __CV_V_INT8    v_int8x16
@@ -88,9 +80,6 @@ struct v_float32x4;
 struct v_float64x2;
 #endif
 
-/** Value reordering **/
-
-// Expansion
 void v_expand(const __CV_V_UINT8&,  __CV_V_UINT16&, __CV_V_UINT16&);
 void v_expand(const __CV_V_INT8&,   __CV_V_INT16&,  __CV_V_INT16&);
 void v_expand(const __CV_V_UINT16&, __CV_V_UINT32&, __CV_V_UINT32&);

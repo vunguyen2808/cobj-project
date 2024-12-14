@@ -1,0 +1,25 @@
+# ninja log v5
+5	452	755808649	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	27b5e235854405e3
+1	475	755808650	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	1488782b5248c00d
+8	544	755808650	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	c7c69afabc5dda5a
+544	674	755808650	E:/source/freelance/cobj-project/app/build/intermediates/cxx/Debug/2d1k4s2z/obj/x86_64/libyolov8ncnn.so	d8fb4e58426cb592
+2	576	755810115	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	1488782b5248c00d
+576	924	755810116	E:/source/freelance/cobj-project/app/build/intermediates/cxx/Debug/2d1k4s2z/obj/x86_64/libyolov8ncnn.so	d8fb4e58426cb592
+1	465	755810234	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	1488782b5248c00d
+465	593	755810234	E:/source/freelance/cobj-project/app/build/intermediates/cxx/Debug/2d1k4s2z/obj/x86_64/libyolov8ncnn.so	d8fb4e58426cb592
+2	450	755810549	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	1488782b5248c00d
+450	578	755810549	E:/source/freelance/cobj-project/app/build/intermediates/cxx/Debug/2d1k4s2z/obj/x86_64/libyolov8ncnn.so	d8fb4e58426cb592
+5	439	755811164	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	27b5e235854405e3
+1	469	755811164	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	1488782b5248c00d
+9	523	755811164	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	c7c69afabc5dda5a
+523	652	755811164	E:/source/freelance/cobj-project/app/build/intermediates/cxx/Debug/2d1k4s2z/obj/x86_64/libyolov8ncnn.so	d8fb4e58426cb592
+11	576	755812313	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	27b5e235854405e3
+2	627	755812313	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	1488782b5248c00d
+6	657	755812313	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	c7c69afabc5dda5a
+657	799	755812313	E:/source/freelance/cobj-project/app/build/intermediates/cxx/Debug/2d1k4s2z/obj/x86_64/libyolov8ncnn.so	d8fb4e58426cb592
+9	617	755812490	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	27b5e235854405e3
+2	659	755812490	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	1488782b5248c00d
+6	711	755812490	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	c7c69afabc5dda5a
+711	841	755812490	E:/source/freelance/cobj-project/app/build/intermediates/cxx/Debug/2d1k4s2z/obj/x86_64/libyolov8ncnn.so	d8fb4e58426cb592
+2	642	755894249	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	1488782b5248c00d
+642	923	755894249	E:/source/freelance/cobj-project/app/build/intermediates/cxx/Debug/2d1k4s2z/obj/x86_64/libyolov8ncnn.so	d8fb4e58426cb592

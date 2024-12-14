@@ -1,14 +1,8 @@
-// This file is part of OpenCV project.
-// It is subject to the license terms in the LICENSE file found in the top-level directory
-// of this distribution and at http://opencv.org/license.html
-
 #ifndef OPENCV_HAL_INTRIN_SSE_EM_HPP
 #define OPENCV_HAL_INTRIN_SSE_EM_HPP
 
 namespace cv
 {
-
-//! @cond IGNORED
 
 CV_CPU_OPTIMIZATION_HAL_NAMESPACE_BEGIN
 
@@ -24,10 +18,7 @@ CV_CPU_OPTIMIZATION_HAL_NAMESPACE_BEGIN
     inline tp _v128_##fun(const tp& a, const tp& b, const tp& c) \
     { return _mm_##fun(a, b, c); }
 
-///////////////////////////// XOP /////////////////////////////
-
-// [todo] define CV_XOP
-#if 1 // CV_XOP
+#if 1
 inline __m128i _v128_comgt_epu32(const __m128i& a, const __m128i& b)
 {
     const __m128i delta = _mm_set1_epi32((int)0x80000000);

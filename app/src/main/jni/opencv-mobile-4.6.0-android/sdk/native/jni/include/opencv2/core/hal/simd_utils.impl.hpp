@@ -1,9 +1,4 @@
-// This file is part of OpenCV project.
-// It is subject to the license terms in the LICENSE file found in the top-level directory
-// of this distribution and at http://opencv.org/license.html
-
-// This header is not standalone. Don't include directly, use "intrin.hpp" instead.
-#ifdef OPENCV_HAL_INTRIN_HPP  // defined in intrin.hpp
+#ifdef OPENCV_HAL_INTRIN_HPP
 
 
 #if CV_SIMD128 || CV_SIMD128_CPP

@@ -1,9 +1,3 @@
-// This file is part of OpenCV project.
-// It is subject to the license terms in the LICENSE file found in the top-level directory
-// of this distribution and at http://opencv.org/license.html
-
-// Copyright (C) 2015, PingTouGe Semiconductor Co., Ltd., all rights reserved.
-
 #ifndef OPENCV_HAL_INTRIN_RISCVV_HPP
 #define OPENCV_HAL_INTRIN_RISCVV_HPP
 
@@ -14,13 +8,11 @@
 namespace cv
 {
 
-//! @cond IGNORED
-
 CV_CPU_OPTIMIZATION_HAL_NAMESPACE_BEGIN
 
 #define CV_SIMD128 1
 #define CV_SIMD128_64F 1
-//////////// Types ////////////
+
 struct v_uint8x16
 {
     typedef uchar lane_type;

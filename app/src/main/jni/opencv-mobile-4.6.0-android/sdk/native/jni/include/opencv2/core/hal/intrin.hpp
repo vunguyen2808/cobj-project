@@ -1,47 +1,3 @@
-/*M///////////////////////////////////////////////////////////////////////////////////////
-//
-//  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
-//
-//  By downloading, copying, installing or using the software you agree to this license.
-//  If you do not agree to this license, do not download, install,
-//  copy or use the software.
-//
-//
-//                          License Agreement
-//                For Open Source Computer Vision Library
-//
-// Copyright (C) 2000-2008, Intel Corporation, all rights reserved.
-// Copyright (C) 2009, Willow Garage Inc., all rights reserved.
-// Copyright (C) 2013, OpenCV Foundation, all rights reserved.
-// Copyright (C) 2015, Itseez Inc., all rights reserved.
-// Third party copyrights are property of their respective owners.
-//
-// Redistribution and use in source and binary forms, with or without modification,
-// are permitted provided that the following conditions are met:
-//
-//   * Redistribution's of source code must retain the above copyright notice,
-//     this list of conditions and the following disclaimer.
-//
-//   * Redistribution's in binary form must reproduce the above copyright notice,
-//     this list of conditions and the following disclaimer in the documentation
-//     and/or other materials provided with the distribution.
-//
-//   * The name of the copyright holders may not be used to endorse or promote products
-//     derived from this software without specific prior written permission.
-//
-// This software is provided by the copyright holders and contributors "as is" and
-// any express or implied warranties, including, but not limited to, the implied
-// warranties of merchantability and fitness for a particular purpose are disclaimed.
-// In no event shall the Intel Corporation or contributors be liable for any direct,
-// indirect, incidental, special, exemplary, or consequential damages
-// (including, but not limited to, procurement of substitute goods or services;
-// loss of use, data, or profits; or business interruption) however caused
-// and on any theory of liability, whether in contract, strict liability,
-// or tort (including negligence or otherwise) arising in any way out of
-// the use of this software, even if advised of the possibility of such damage.
-//
-//M*/
-
 #ifndef OPENCV_HAL_INTRIN_HPP
 #define OPENCV_HAL_INTRIN_HPP
 
@@ -50,10 +6,7 @@
 #include <stdlib.h>
 #include "opencv2/core/cvdef.h"
 
-#define OPENCV_HAL_ADD(a, b) ((a) + (b))
-#define OPENCV_HAL_AND(a, b) ((a) & (b))
 #define OPENCV_HAL_NOP(a) (a)
-#define OPENCV_HAL_1ST(a, b) (a)
 
 namespace {
 inline unsigned int trailingZeros32(unsigned int value) {
@@ -82,10 +35,6 @@ inline unsigned int trailingZeros32(unsigned int value) {
 #endif
 }
 }
-
-// unlike HAL API, which is in cv::hal,
-// we put intrinsics into cv namespace to make its
-// access from within opencv code more accessible
 namespace cv {
 
 namespace hal {
@@ -99,7 +48,6 @@ enum StoreMode
 
 }
 
-// TODO FIXIT: Don't use "God" traits. Split on separate cases.
 template<typename _Tp> struct V_TypeTraits
 {
 };
@@ -182,7 +130,7 @@ CV_INTRIN_DEF_TYPE_TRAITS_NO_Q_TYPE(double, int64, uint64, double, void, double)
     #define CV_CPU_OPTIMIZATION_HAL_NAMESPACE_BEGIN namespace hal_baseline {
     #define CV_CPU_OPTIMIZATION_HAL_NAMESPACE_END }
 #endif
-#endif // CV_CPU_OPTIMIZATION_HAL_NAMESPACE
+#endif
 
 CV_CPU_OPTIMIZATION_HAL_NAMESPACE_BEGIN
 CV_CPU_OPTIMIZATION_HAL_NAMESPACE_END

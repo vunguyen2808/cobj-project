@@ -1,17 +1,3 @@
-// Tencent is pleased to support the open source community by making ncnn available.
-//
-// Copyright (C) 2021 THL A29 Limited, a Tencent company. All rights reserved.
-//
-// Licensed under the BSD 3-Clause License (the "License"); you may not use this file except
-// in compliance with the License. You may obtain a copy of the License at
-//
-// https://opensource.org/licenses/BSD-3-Clause
-//
-// Unless required by applicable law or agreed to in writing, software distributed
-// under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-// CONDITIONS OF ANY KIND, either express or implied. See the License for the
-// specific language governing permissions and limitations under the License.
-
 package com.tencent.yolov8ncnn;
 
 import android.Manifest;
@@ -24,6 +10,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -32,57 +20,44 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
-
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.widget.Toast;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.file.Files;
 import java.util.Date;
 import java.util.Locale;
 
-public class MainActivity extends Activity implements SurfaceHolder.Callback
-{
+public class MainActivity extends Activity implements SurfaceHolder.Callback {
     public static final int REQUEST_CAMERA = 100;
-    private Yolov8Ncnn yolov8ncnn = new Yolov8Ncnn();
-    private int facing = 1;
-    private Spinner spinnerModel;
-    private Spinner spinnerCPUGPU;
+    private final Yolov8Ncnn yolov8ncnn = new Yolov8Ncnn();
     private int current_model = 0;
-    private int current_cpugpu = 0;
-    private SurfaceView cameraView;
 
-    /** Called when the activity is first created. */
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        cameraView = (SurfaceView) findViewById(R.id.cameraview);
+        SurfaceView cameraView = findViewById(R.id.cameraview);
 
         cameraView.getHolder().setFormat(PixelFormat.RGBA_8888);
         cameraView.getHolder().addCallback(this);
 
-        Button buttonSwitchCamera = (Button) findViewById(R.id.buttonSwitchCamera);
+        Button buttonSwitchCamera = findViewById(R.id.buttonSwitchCamera);
         buttonSwitchCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                    saveImageToMediaStore();
+                saveImageToMediaStore();
             }
 
             public void saveImageToMediaStore() {
-                // Get the current time and format it as a string
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault());
                 String currentTime = sdf.format(new Date());
 
-                // Temporary file location
                 File tempFile = new File(getCacheDir(), "temp_screenshot_" + currentTime + ".jpg");
                 boolean success = yolov8ncnn.takeScreenshot(tempFile.getAbsolutePath());
 
@@ -96,7 +71,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback
                     Uri uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
 
                     try (OutputStream os = getContentResolver().openOutputStream(uri);
-                         InputStream is = new FileInputStream(tempFile)) {
+                         InputStream is = Files.newInputStream(tempFile.toPath())) {
                         byte[] buffer = new byte[4 * 1024]; // 4KB
                         int read;
                         while ((read = is.read(buffer)) != -1) {
@@ -109,7 +84,6 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback
                         Toast.makeText(MainActivity.this, "Failed to save screenshot!", Toast.LENGTH_SHORT).show();
                     }
 
-                    // Delete the temporary file
                     tempFile.delete();
                 } else {
                     Toast.makeText(MainActivity.this, "Failed to take screenshot!", Toast.LENGTH_SHORT).show();
@@ -117,88 +91,59 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback
             }
         });
 
-        spinnerModel = (Spinner) findViewById(R.id.spinnerModel);
+        Spinner spinnerModel = findViewById(R.id.spinnerModel);
         spinnerModel.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id)
-            {
-                if (position != current_model)
-                {
+            public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
+                if (position != current_model) {
                     current_model = position;
                     reload();
                 }
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> arg0)
-            {
-            }
-        });
-
-        spinnerCPUGPU = (Spinner) findViewById(R.id.spinnerCPUGPU);
-        spinnerCPUGPU.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id)
-            {
-                if (position != current_cpugpu)
-                {
-                    current_cpugpu = position;
-                    reload();
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> arg0)
-            {
+            public void onNothingSelected(AdapterView<?> arg0) {
             }
         });
 
         reload();
     }
 
-    private void reload()
-    {
-        boolean ret_init = yolov8ncnn.loadModel(getAssets(), current_model, current_cpugpu);
-        if (!ret_init)
-        {
+    private void reload() {
+        boolean ret_init = yolov8ncnn.loadModel(getAssets(), current_model);
+        if (!ret_init) {
             Log.e("MainActivity", "yolov8ncnn loadModel failed");
         }
     }
 
     @Override
-    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height)
-    {
+    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
         yolov8ncnn.setOutputWindow(holder.getSurface());
     }
 
     @Override
-    public void surfaceCreated(SurfaceHolder holder)
-    {
+    public void surfaceCreated(SurfaceHolder holder) {
     }
 
     @Override
-    public void surfaceDestroyed(SurfaceHolder holder)
-    {
+    public void surfaceDestroyed(SurfaceHolder holder) {
     }
 
     @Override
-    public void onResume()
-    {
+    public void onResume() {
         super.onResume();
 
-        if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED)
-        {
-            ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CAMERA}, REQUEST_CAMERA);
+        if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA);
         }
 
+        int facing = 1;
         yolov8ncnn.openCamera(facing);
     }
 
     @Override
-    public void onPause()
-    {
+    public void onPause() {
         super.onPause();
-
         yolov8ncnn.closeCamera();
     }
 

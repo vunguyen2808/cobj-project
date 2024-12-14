@@ -1,16 +1,6 @@
 #ifndef OPENCV_CORE_HAL_INTERFACE_H
 #define OPENCV_CORE_HAL_INTERFACE_H
 
-//! @addtogroup core_hal_interface
-//! @{
-
-//! @name Return codes
-//! @{
-#define CV_HAL_ERROR_OK 0
-#define CV_HAL_ERROR_NOT_IMPLEMENTED 1
-#define CV_HAL_ERROR_UNKNOWN -1
-//! @}
-
 #ifdef __cplusplus
 #include <cstddef>
 #else
@@ -18,17 +8,6 @@
 #include <stdbool.h>
 #endif
 
-//! @name Data types
-//! primitive types
-//! - schar  - signed 1 byte integer
-//! - uchar  - unsigned 1 byte integer
-//! - short  - signed 2 byte integer
-//! - ushort - unsigned 2 byte integer
-//! - int    - signed 4 byte integer
-//! - uint   - unsigned 4 byte integer
-//! - int64  - signed 8 byte integer
-//! - uint64 - unsigned 8 byte integer
-//! @{
 #if !defined _MSC_VER && !defined __BORLANDC__
 #  if defined __cplusplus && __cplusplus >= 201103L && !defined __APPLE__
 #    include <cstdint>
